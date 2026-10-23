@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Purrfect Match</title>
+  <meta name="description" content="Tinder for cats. A just-for-fun prototype with mock data.">
+  <meta name="theme-color" content="#FD3A73">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐱</text></svg>">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-view="discover">
+  <div class="app">
+    <header class="topbar">
+      <a class="logo" href="#discover" aria-label="Purrfect Match home">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="6.5" cy="9" r="2.2"/><circle cx="12" cy="6" r="2.2"/><circle cx="17.5" cy="9" r="2.2"/><path d="M12 11.5c-3.2 0-5.8 3.4-5.8 5.7 0 1.7 1.4 2.8 3.1 2.3 1-.3 1.9-.6 2.7-.6s1.7.3 2.7.6c1.7.5 3.1-.6 3.1-2.3 0-2.3-2.6-5.7-5.8-5.7z"/></svg>
+        <span>purrfect</span>
+      </a>
+    </header>
+
+    <main id="view"></main>
+
+    <nav class="tabbar" aria-label="Main">
+      <a href="#discover" data-tab="discover">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M5 3.5l3.6 4h6.8l3.6-4V13a7 7 0 01-14 0z"/><path d="M9.5 12.5v.5M14.5 12.5v.5" stroke-linecap="round"/></svg>
+        Discover
+      </a>
+      <a href="#matches" data-tab="matches">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M4 5.5A2.5 2.5 0 016.5 3h11A2.5 2.5 0 0120 5.5v8a2.5 2.5 0 01-2.5 2.5H9l-5 4z"/></svg>
+        Matches
+        <span class="badge" id="badge" hidden></span>
+      </a>
+      <a href="#profile" data-tab="profile">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><circle cx="6.5" cy="9" r="2"/><circle cx="12" cy="6" r="2"/><circle cx="17.5" cy="9" r="2"/><path d="M12 11.5c-3.2 0-5.8 3.4-5.8 5.7 0 1.7 1.4 2.8 3.1 2.3 1-.3 1.9-.6 2.7-.6s1.7.3 2.7.6c1.7.5 3.1-.6 3.1-2.3 0-2.3-2.6-5.7-5.8-5.7z"/></svg>
+        My cat
+      </a>
+    </nav>
+  </div>
+
+  <div id="overlay-root"></div>
+
+  <script src="data.js"></script>
+  <script src="cat-art.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
